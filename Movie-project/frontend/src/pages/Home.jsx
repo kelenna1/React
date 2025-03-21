@@ -67,7 +67,7 @@ const handleSearch = async (e) =>{
             <div className="loading">Loading....</div>
         ):(<div className="movies-grid">
             {movies.map((movie) =>(
-                movie.title.toLocaleLowerCase().startsWith(searchQuery) && <MovieCard movie={movie} key = {movie.id}/>
+                movie.title.toLowerCase().startsWith(searchQuery) && <MovieCard movie={movie} key = {movie.id}/>
             ))}
         </div>)}
         
